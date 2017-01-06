@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Intellicus Style Guide</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="tools/highlight/jquery.highlight.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body data-layout="col">
+    
+    <div data-item="hdr">
+        <div class="header">
+        </div>
+    </div>
+    <div data-item="body" data-layout="row">
+        <div data-item="left" data-layout="col">
+            <div class="navigation" data-item="body">
+                <!--  <ul class="list">
+                    <h3>INTRO</h3>
+                    <li>Button</li>
+                    <li>Loader</li>
+                    <h3>Basics</h3>
+                    <li>Button</li>
+                    <li>Loader</li>
+                    <h3>Other</h3>
+                    <li>Button</li>
+                    <li>Loader</li>
+                </ul> -->
+            </div>
+        </div>
+        <div data-item="body" class="main-content" data-ng-view data-layout="col">
+         
+           
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="controller/buttons.js"></script>
+    <script src="tools/highlight/jquery.highlight.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('pre.code').highlight({
+            source: 1,
+            zebra: 0,
+            indent: '',
+            list: 'ol'
+        });
+
+
+    });
+    </script>
+</body>
+
+</html>

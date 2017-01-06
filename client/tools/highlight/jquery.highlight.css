@@ -1,0 +1,131 @@
+div.highlight { 
+	background:#eaeaed;
+	overflow: hidden;
+	margin: 0 0 1.5em;
+	padding: 8px;
+}
+div.highlight pre{
+	width: 100%;
+	overflow: auto;
+	padding:0;
+	margin:0;	
+	clear: both;
+	border-radius: 0;
+	border: none;
+}
+
+/* tabs */
+div.highlight ul.tabs {
+	overflow: hidden;
+	margin: 0;
+	list-style: none;
+	width: 100%;
+	position: relative;
+	display: none;
+}
+div.highlight ul.tabs li {
+	padding: 8px;
+	margin: 0 5px;
+	float: left;
+	line-height:1.0em;
+	color: #616161;
+;
+	cursor: pointer;
+}
+div.highlight ul.tabs li.active {
+	border-bottom: none;
+	cursor: default;
+}
+
+/* pre */
+div.highlight pre.code ol {
+	margin: 0;
+	padding:0 0 0 45px;
+}
+div.highlight pre.code ul {
+	margin: 0;
+	padding:0;	
+}
+div.highlight pre.code ol li,
+div.highlight pre.code ul li {
+	padding:4px 16px;
+	list-style:decimal;
+
+}
+div.highlight pre.code ul li {
+	border-left:none;
+}
+div.highlight pre.code ol li.even,
+div.highlight pre.code ul li.even {
+	background-color:#FFFFFF;
+}
+div.highlight pre.source {
+	display: none;
+	padding:0 0 0 5px;
+}
+
+/* highligting */
+pre{
+	color: #616161;
+}
+pre.code .str { 
+	color: #FF9800; 
+}
+pre.code .kwd,
+pre.code .kwd span { 
+	color: #ff7b29;
+}
+pre.code .com,
+pre.code .com span { 
+	color:#080;
+	font-style: italic;
+	font-weight: normal; 
+}
+pre.code .typ { 
+	color: #606; 
+}
+pre.code .lit { 
+	color: #2db34a;
+}
+pre.code .pun { 
+	color: #660; }
+pre.code .pln { 
+	color: #000; 
+}
+pre.code .tag { 
+	color: #ff7b29;
+} 
+pre.code .atn { 
+	color: #0087cc; 
+}
+pre.code .atv { 
+	color: #2db34a; 
+}
+pre.code .dec { 
+	color: #CDDC39; 
+}
+pre.code .fnc,
+pre.code .fnc span { 
+	color: #00b; 
+}
+
+/* css */
+.css pre.code .kwd,
+.css pre.code .kwd span { 
+	color: #ff7b29;
+}
+/* php */
+.php pre.code .str,
+.php pre.code .str span { 
+	color: #d00; 
+}
+.php pre.code .var,
+.php pre.code .var span { 
+	color: #00b; 
+}
+.php pre.code .com,
+.php pre.code .com span { 
+	color:#ff8000;
+	font-style: italic;
+	font-weight: normal; 
+}

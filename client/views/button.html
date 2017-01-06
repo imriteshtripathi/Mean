@@ -1,0 +1,21 @@
+<div ng-init="getButtons()">
+<a class="btn btn-primary" href="#/button/add" role="button" style="margin-bottom:16px">Add  Button</a>
+
+    <div class="code-snippet">
+        <table width="100%">
+        <tbody ng-repeat="button in buttons">
+            <tr>
+                <td colspan="4"><h1>{{button.title}}</h1></td>
+            </tr>
+            <tr>
+                <td>{{button.html}}</td>
+                <td>{{button.css}}</td>
+                <td>{{button.scss}}</td>
+                <td>{{button.js}}</td>
+                <td><a class="btn btn-primary" href="#/button/edit/{{button._id}}" role="button">Edit</a>
+                <a class="btn btn-danger" ng-click="removeButton(button._id)" href="#" role="button">Delete</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

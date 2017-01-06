@@ -1,0 +1,72 @@
+/*** layout css starts ***/
+[data-layout]{
+	@include display-flex();
+}
+[data-layout="row"]{
+	@include flex-flow(row nowrap);
+}
+[data-layout="col"]{
+	@include flex-flow(column nowrap);
+}
+[data-item="hdr"],
+[data-item="ftr"],
+[data-item="left"],
+[data-item="right"]{
+	@include flex(0 0 auto);
+}
+[data-item="body"]{
+	@include flex(1 1 auto);
+}
+/*Column Layout :start*/
+div.hdr, div.ftr, div.left, div.right{	
+	@include box-sizing(border-box);
+}
+div.hdr, div.left{
+	@include order(1);
+}
+div.ftr, div.right,
+[data-item="ftr"],
+[data-item="right"]{
+	@include order(3);
+}
+
+div.right,
+[data-item="right"]{
+  @include justify-content(flex-end);
+}
+.main-body,[data-item="body"]{
+	@include order(2);
+}
+
+.hdr > .main-body{
+	// @include ellipsis();
+}
+.window .hdr > .main-body{
+	padding-left:0;
+}
+/*Column Layout :End*/
+
+// updated
+[data-layout="column"]{
+  @include flex-flow(column nowrap);
+}
+[data-align="center"]{
+  @include align-items(center);
+  @include justify-content(center);
+}
+[data-align="vert-col"]{
+  @include justify-content(center);
+}
+[data-align="vert-row"]{
+  @include align-items(center);
+}
+
+[data-align="top"]{
+  @include align-items(flex-start);
+  @include justify-content(flex-start);
+}
+
+[data-item="body-fix"]{
+  @include flex(1 0 0);
+  @include order(2);
+}

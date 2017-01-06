@@ -1,0 +1,42 @@
+/*** included font css starts ***/
+
+@font-face {/*Regular*/
+    font-family: 'roboto-regular';
+    src: url('fonts/roboto/eot/roboto-regular-webfont.eot');
+    src: url('fonts/roboto/eot/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/woff/roboto-regular-webfont.woff') format('woff'),
+         url('fonts/roboto/ttf/roboto-regular-webfont.ttf') format('truetype');
+    font-style: normal; 
+}
+
+
+@font-face {/*Medium*/
+    font-family: 'roboto-medium';
+    src: url('fonts/roboto/eot/roboto-medium-webfont.eot');
+    src: url('fonts/roboto/eot/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/woff/roboto-medium-webfont.woff') format('woff'),
+         url('fonts/roboto/ttf/roboto-medium-webfont.ttf') format('truetype');
+    font-style: normal;
+}
+
+
+@font-face {/*Light*/
+    font-family: 'roboto-light';
+    src: url('fonts/roboto/eot/roboto-light-webfont.eot');
+    src: url('fonts/roboto/eot/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/woff/roboto-light-webfont.woff') format('woff'),
+         url('fonts/roboto/ttf/roboto-light-webfont.ttf') format('truetype');
+    font-style: normal;
+}
+
+
+@font-face {/*Italic*/
+    font-family: 'roboto-italic';
+    src: url('fonts/roboto/eot/roboto-italic-webfont.eot');
+    src: url('fonts/roboto/eot/roboto-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/woff/roboto-italic-webfont.woff') format('woff'),
+         url('fonts/roboto/ttf/roboto-italic-webfont.ttf') format('truetype');
+    font-style: italic;
+}
+
+/*** included font css ends ***/

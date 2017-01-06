@@ -1,0 +1,16 @@
+{
+  "name": "styleguide",
+  "version": "1.0.0",
+  "description": "Application style guide",
+  "main": "appCore.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies":{
+  	"express":"*",
+  	"body-parser":"*",
+  	"mongoose":"*"
+  },
+  "author": "Ritesh Tripathi",
+  "license": "ISC"
+}

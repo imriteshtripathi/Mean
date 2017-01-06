@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <h1>Add Button</h1>
+            <form ng-submit="addButton();">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" class="form-control" name="title" ng-model="button.title">
+                </div>
+                <div class="form-group">
+                    <label>Sub Title</label>
+                    <input type="text" class="form-control" name="subtitle" ng-model="button.subtitle">
+                </div>
+                <div class="form-group">
+                    <label>Html</label>
+                    <textarea name="html" id="" cols="30" rows="10" class="form-control" ng-model="button.html"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>CSS</label>
+                    <textarea name="css" id="" cols="30" rows="10" class="form-control" ng-model="button.css"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>SCSS</label>
+                    <textarea name="scss" id="" cols="30" rows="10" class="form-control" ng-model="button.scss"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>JavaScript</label>
+                    <textarea name="js" id="" cols="30" rows="10" class="form-control" ng-model="button.js"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Common</label>
+                    <textarea name="common" id="" cols="30" rows="10" class="form-control" ng-model="button.common"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Comment</label>
+                    <textarea name="comment" id="" cols="30" rows="10" class="form-control" ng-model="button.comment"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div ng-init="getButtons()">
+{{buttons}}
+<div ng-repeat="button in buttons">
+	<h1>{{button.title}}</h1>
+<div class="component" data-layout="col">
+                <div data-item="hdr" class="preview">
+                    {{button.html}}
+                </div>
+                <div data-item="ftr" class="content">
+                    <div>
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs myTab" role="tablist">
+                            <li role="presentation" class="active"><a data-target="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                            <li role="presentation"><a data-target="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                            <li role="presentation"><a data-target="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                            <li role="presentation"><a data-target="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                                <pre class="code" lang="html">
+                                {{button.html}}
+</pre>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">{{button.css}}</div>
+                            <div role="tabpanel" class="tab-pane" id="messages">{{button.scss}}</div>
+                            <div role="tabpanel" class="tab-pane" id="settings">{{button.js}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</div>
+
+	
+
+</div>
+
